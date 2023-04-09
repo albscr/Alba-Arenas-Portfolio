@@ -1,0 +1,66 @@
+@import url("global.css");
+
+.content-contact {
+  margin: 20px 60px;
+  display: flex;
+  align-items: center;
+  height: 70vh;
+}
+.content-contact .left {
+  width: 60%;
+  text-align: right;
+  padding: 20px;
+}
+.content-contact .left h1 {
+  font-size: var(--fs-80);
+  font-family: var(--font-family-3);
+  margin: 0;
+}
+.content-contact .left p {
+  font-family: var(--font-family-4);
+  font-size: 20px;
+  line-height: 30px;
+}
+.content-contact .right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: space-evenly;
+  padding: 40px;
+  font-family: var(--font-family-1);
+  font-size: 18px;
+}
+.right a,
+.right a:active .right a:visited {
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+.right a:hover {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+  .content-contact {
+    flex-wrap: wrap;
+  }
+  .content-contact .left,
+  .content-contact .right {
+    width: 100%;
+    text-align: justify;
+    padding: 10px 0;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .content-contact .left p {
+    font-size: 40px;
+    line-height: 50px;
+    padding-left: 100px;
+  }
+  .content-contact .right {
+    font-size: 36px;
+    padding: 70px;
+  }
+}

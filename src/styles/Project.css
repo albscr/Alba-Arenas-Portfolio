@@ -1,0 +1,106 @@
+@import url("global.css");
+
+.container-projects {
+  margin: var(--body-m);
+}
+.container-projects:first-of-type {
+  margin-top: var(--md);
+}
+.container-projects:last-of-type {
+  margin-bottom: var(--sm);
+}
+.title-project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title-project-container h2 {
+  font-size: var(--fs-80);
+  font-weight: 400;
+  font-family: var(--font-family-3);
+  text-align: center;
+  padding: var(--sm);
+  border: 1px solid black;
+}
+.title-project-container h2:first-child {
+  width: 30%;
+}
+.title-project-container h2:last-child {
+  width: 70%;
+}
+
+.project-container {
+  display: flex;
+}
+.project-container .left {
+  width: 40%;
+  border: 1px solid black;
+  padding: 20px;
+}
+.left img {
+  display: block;
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.project-container .right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+.right p {
+  font-size: var(--sm);
+  font-family: var(--font-family-1);
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0;
+  padding: 0 var(--md);
+  text-align: justify;
+}
+
+@media only screen and (max-width: 767px) {
+  .container-projects {
+    margin: 0 var(--sm);
+  }
+  .project-container {
+    flex-wrap: wrap;
+  }
+  .project-container .left,
+  .project-container .right {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .container-projects {
+    margin: 0 var(--sm);
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .container-projects {
+    margin: 0 200px;
+  }
+  .container-projects:first-of-type {
+    margin-top: 80px;
+  }
+  .title-project-container h2 {
+    font-size: 90px;
+  }
+  .project-container .left {
+    padding: 40px;
+  }
+  .left img {
+    height: 700px;
+  }
+  .right p {
+    font-size: 40px;
+    line-height: 40px;
+    padding: 30px 80px;
+  }
+}

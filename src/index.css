@@ -1,0 +1,52 @@
+body,
+h1,
+h2 {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@keyframes bganimation {
+  0% {
+    background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+  }
+  50% {
+    background-position: 150% 100%, -200% 100%, 100% 0%, 0% 100%;
+  }
+  100% {
+    background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+  }
+}
+
+html {
+  background: radial-gradient(
+      ellipse at center,
+      #7d11284d 0%,
+      rgba(0, 0, 0, 0) 70%
+    ),
+    /* niebieski */
+      radial-gradient(ellipse at center, #7f55394d 0%, rgba(0, 0, 0, 0) 70%),
+    /*czerwony */
+      radial-gradient(ellipse at center, #c41e3d4d 0%, rgba(0, 0, 0, 0) 70%)
+      /*zielony */ #fff;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 900px 900px, 900px 900px, 900px 900px;
+  background-attachment: fixed;
+  animation: bganimation 30s infinite;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    background-size: 500px 500px, 500px 500px, 500px 500px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  html {
+    background-size: 1200px 1200px, 1200px 1200px, 1200px 1200px;
+  }
+}

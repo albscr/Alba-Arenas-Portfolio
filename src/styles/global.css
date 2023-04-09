@@ -1,0 +1,122 @@
+:root {
+  --font-family-1: "Josefin Sans", sans-serif;
+  --font-family-2: "Merriweather", serif;
+  --font-family-4: "Playfair Display", serif;
+  --font-family-3: "Rantera", serif;
+  --xlg: 200px;
+  --fs-200: clamp(90px, 14vw, 260px);
+  --fs-120: clamp(50px, 12vw, 120px);
+  --fs-80: clamp(30px, 8vw, 80px);
+  /* --fs-20: clamp(10px, 10vw, 20px); */
+  --body-m: 0 120px;
+  --sm: 20px;
+  --md: 40px;
+  --lg: 70px;
+  --xlg: 100px;
+}
+@font-face {
+  font-family: "Rantera";
+  src: url("../fonts/Rantera.otf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,600;0,800;0,900;1,400;1,600;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,400;1,600&display=swap");
+
+.fc {
+  font-family: var(--font-family-3);
+  font-size: 35px;
+  /* font-style: italic; */
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+u {
+  text-decoration: underline;
+  text-decoration-thickness: 1.3px;
+}
+p .st {
+  font-family: var(--font-family-3);
+}
+.svg-sm {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.svg-sm:hover {
+  transform: scale(1.2);
+}
+.svg-m {
+  width: 55px;
+  height: 55px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.svg-m:hover {
+  transform: scale(1.1);
+}
+.svg-l {
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.svg-l:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 767px) {
+  .svg-m {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 2px;
+  }
+  .svg-l {
+    width: 90px;
+    height: 90px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .fc {
+    font-size: 55px;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  .svg-sm {
+    width: 65px;
+    height: 65px;
+    padding: 20px;
+    margin: 15px;
+  }
+  .svg-m {
+    width: 90px;
+    height: 90px;
+    padding: 25px;
+    margin: 20px 0;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .svg-l {
+    width: 150px;
+    height: 150px;
+    padding: 25px;
+    margin: 30px 10px;
+  }
+}
