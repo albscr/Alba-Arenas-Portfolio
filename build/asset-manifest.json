@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Alba-Arenas-Portfolio/static/css/main.16d731d1.css",
+    "main.js": "/Alba-Arenas-Portfolio/static/js/main.29be8beb.js",
+    "static/media/pruebaperfil.jpg": "/Alba-Arenas-Portfolio/static/media/pruebaperfil.30057d17626a6fedfedd.jpg",
+    "static/media/Rantera.otf": "/Alba-Arenas-Portfolio/static/media/Rantera.dc0adae989e8b415da1d.otf",
+    "index.html": "/Alba-Arenas-Portfolio/index.html",
+    "main.16d731d1.css.map": "/Alba-Arenas-Portfolio/static/css/main.16d731d1.css.map",
+    "main.29be8beb.js.map": "/Alba-Arenas-Portfolio/static/js/main.29be8beb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16d731d1.css",
+    "static/js/main.29be8beb.js"
+  ]
+}
