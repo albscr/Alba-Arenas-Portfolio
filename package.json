@@ -39,5 +39,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://albscr.github.io/Portfolio-Alba-Arenas/"
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
+  "homepage": "https://albscr.github.io/Portfolio-Alba"
 }
