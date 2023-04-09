@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Alba-Arenas-Portfolio/static/css/main.16d731d1.css",
-    "main.js": "/Alba-Arenas-Portfolio/static/js/main.29be8beb.js",
-    "static/media/pruebaperfil.jpg": "/Alba-Arenas-Portfolio/static/media/pruebaperfil.30057d17626a6fedfedd.jpg",
-    "static/media/Rantera.otf": "/Alba-Arenas-Portfolio/static/media/Rantera.dc0adae989e8b415da1d.otf",
-    "index.html": "/Alba-Arenas-Portfolio/index.html",
-    "main.16d731d1.css.map": "/Alba-Arenas-Portfolio/static/css/main.16d731d1.css.map",
-    "main.29be8beb.js.map": "/Alba-Arenas-Portfolio/static/js/main.29be8beb.js.map"
+    "main.css": "/Prueba3/static/css/main.6d528614.css",
+    "main.js": "/Prueba3/static/js/main.89878287.js",
+    "static/media/pruebaperfil.jpg": "/Prueba3/static/media/pruebaperfil.30057d17626a6fedfedd.jpg",
+    "static/media/Rantera.otf": "/Prueba3/static/media/Rantera.dc0adae989e8b415da1d.otf",
+    "index.html": "/Prueba3/index.html",
+    "main.6d528614.css.map": "/Prueba3/static/css/main.6d528614.css.map",
+    "main.89878287.js.map": "/Prueba3/static/js/main.89878287.js.map"
   },
   "entrypoints": [
-    "static/css/main.16d731d1.css",
-    "static/js/main.29be8beb.js"
+    "static/css/main.6d528614.css",
+    "static/js/main.89878287.js"
   ]
 }
