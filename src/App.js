@@ -7,6 +7,7 @@ import { HomePage } from "./Pages/HomePage";
 import { NotFound } from "./Pages/NotFound";
 import { Projects } from "./Pages/Projects";
 
+
 function App() {
   return (
     <>

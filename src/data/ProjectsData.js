@@ -1,26 +1,25 @@
 
-
 const projectsData = [
     {
         id: 1,
-        title: "Proyecto 1",
-        photo: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2938&q=80",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet cursus sit amet dictum sit amet justo donec enim. Nunc mi ipsum faucibus vitae aliquet nec. Amet massa vitae tortor condimentum lacinia quis vel. Malesuada fames ac turpis egestas integer eget. Nulla malesuada pellentesque elit eget. Urna molestie at elementum eu facilisis sed odio morbi. Mattis ullamcorper velit sed ullamcorper. Blandit aliquam etiam erat velit scelerisque in dictum non. Habitasse platea dictumst quisque sagittis purus sit amet. Leo duis ut diam quam nulla porttitor. ",
+        title: "Project 1",
+        photo: "https://user-images.githubusercontent.com/108294869/233848239-a1f85dde-2035-4a88-9f39-c05153d5794b.png",
+        description: "I implemented events in the browser window using window.addEventListener to improve the interactivity of a game. I also used my knowledge of mathematics to create game logic, including collision detection, path calculation, and object animation. To create custom graphics and game elements, I used JavaScript canvas, adjusting sizes and positions to fit the user interface. In addition, I created and manipulated multidimensional arrays to store and organize relevant game data, such as object positions and player statistics. I also implemented custom events and buttons to improve the usability of the game and allow players to interact with it more intuitively. Finally, I used localStorage to store and retrieve relevant game data, such as player score and level progress.",
         links: [
-            { live: "https://www.youtube.com/watch?v=yPYzj9Gv9y4&t=2s" },
-            { repository: "https://github.com/proyecto-1" }
+            { live: "https://albscr.github.io/Videogame-JS/" },
+            { repository: "https://github.com/albscr/Videogame-JS" }
         ]
     },
     {
         id: 2,
-        title: "Proyecto 2",
-        photo: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
-        description:  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet cursus sit amet dictum sit amet justo donec enim. Nunc mi ipsum faucibus vitae aliquet nec. Amet massa vitae tortor condimentum lacinia quis vel. Malesuada fames ac turpis egestas integer eget. Nulla malesuada pellentesque elit eget. Urna molestie at elementum eu facilisis sed odio morbi. Mattis ullamcorper velit sed ullamcorper. Blandit aliquam etiam erat velit scelerisque in dictum non. Habitasse platea dictumst quisque sagittis purus sit amet. Leo duis ut diam quam nulla porttitor. ",
+        title: "Project 2",
+        photo: "https://user-images.githubusercontent.com/108294869/233849927-53e60623-f9b3-40bd-a283-4b4e864cf78b.png",
+        description:  "I have experience using various CSS properties and techniques to enhance the appearance and functionality of web pages. This includes manipulating elements on the z-axis with translate3d(), adjusting values using calc(), using background-position to manipulate section backgrounds, and improving animation performance with will-change. I also use properties like scroll-behavior and overflow to create a smooth and seamless browsing experience. Additionally, I use text-shadow to add visual interest to text and window.addEventListener() to detect user scroll events and update CSS variables accordingly.",
         links: [
-            { live: "https://www.youtube.com/watch?v=yPYzj9Gv9y4&t=2s" },
-            { repository: "https://github.com/proyecto-1" }
+            { live: "https://prueba-parallax.vercel.app/" },
+            { repository: "https://github.com/albscr/Parallax-effect" }
         ]
     },
-];
+]; 
 
 export default projectsData;
