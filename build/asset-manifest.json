@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Prueba3/static/css/main.6d528614.css",
-    "main.js": "/Prueba3/static/js/main.89878287.js",
-    "static/media/pruebaperfil.jpg": "/Prueba3/static/media/pruebaperfil.30057d17626a6fedfedd.jpg",
-    "static/media/Rantera.otf": "/Prueba3/static/media/Rantera.dc0adae989e8b415da1d.otf",
-    "index.html": "/Prueba3/index.html",
-    "main.6d528614.css.map": "/Prueba3/static/css/main.6d528614.css.map",
-    "main.89878287.js.map": "/Prueba3/static/js/main.89878287.js.map"
+    "main.css": "/static/css/main.73a71b4c.css",
+    "main.js": "/static/js/main.3f1326ce.js",
+    "static/media/Foto1.png": "/static/media/Foto1.3b32a1cc8a60487d5aeb.png",
+    "static/media/Rantera.otf": "/static/media/Rantera.dc0adae989e8b415da1d.otf",
+    "index.html": "/index.html",
+    "main.73a71b4c.css.map": "/static/css/main.73a71b4c.css.map",
+    "main.3f1326ce.js.map": "/static/js/main.3f1326ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d528614.css",
-    "static/js/main.89878287.js"
+    "static/css/main.73a71b4c.css",
+    "static/js/main.3f1326ce.js"
   ]
 }
