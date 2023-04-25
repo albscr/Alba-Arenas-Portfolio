@@ -1,10 +1,19 @@
 import React from "react";
 import "../styles/Project.css";
+import { motion } from "framer-motion";
 
 function Project({ id, title, photo, description, links }) {
-  return ( 
+  return (
     <>
-      <div className="container-projects">
+      <motion.div
+        className="container-projects"
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 100,
+          transition: { duration: 1.2, ease: "easeInOut" },
+        }}
+        transition={{ delay: 1 }}
+      >
         <div className="title-project-container">
           <h2>{id}</h2>
           <h2>{title}</h2>
@@ -47,7 +56,7 @@ function Project({ id, title, photo, description, links }) {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

@@ -7,13 +7,12 @@ import { HomePage } from "./Pages/HomePage";
 import { NotFound } from "./Pages/NotFound";
 import { Projects } from "./Pages/Projects";
 
-
 function App() {
   return (
     <>
       <HashRouter>
         <Menu />
-
+      
         <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/about-me" element={<AboutMe/>} />

@@ -1,14 +1,20 @@
 import React from "react";
 import { Title } from "../Components/Title";
-import Profile from "../assets/Foto1.png";
+import { motion } from "framer-motion";
+import Profile from "../assets/foto3.png";
 import "../styles/AboutMe.css";
 
 function AboutMe() {
   return (
     <>
-      <div className="container-aboutMe">
+      <motion.div className="container-aboutMe">
         <Title title="About Me" />
-        <section className="content-aboutMe">
+        <motion.section
+          className="content-aboutMe"
+          initial={{ opacity: 0}}
+          animate={{ opacity: 100, transition: { duration: 1.2, ease: "easeInOut" } }}
+          transition={{ delay: 1 }}
+        >
           <div className="img-container">
             <img src={Profile} alt="Alba Arenas" />
             <div className="rrss">
@@ -177,7 +183,7 @@ function AboutMe() {
               href="https://drive.google.com/file/d/1dXz45CD1mu9pVaSvL6KRuzK5S5suJ_qR/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-            > 
+            >
               Resume
             </a>
           </div>
@@ -213,8 +219,8 @@ function AboutMe() {
               </li>
             </ul>
           </div>
-        </section>
-      </div>
+        </motion.section>
+      </motion.div>
     </>
   );
 }
