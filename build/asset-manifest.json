@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.73a71b4c.css",
-    "main.js": "/static/js/main.3f1326ce.js",
-    "static/media/Foto1.png": "/static/media/Foto1.3b32a1cc8a60487d5aeb.png",
+    "main.js": "/static/js/main.3cfae509.js",
+    "static/media/foto3.png": "/static/media/foto3.d2b5d91dc8374038c0a5.png",
     "static/media/Rantera.otf": "/static/media/Rantera.dc0adae989e8b415da1d.otf",
     "index.html": "/index.html",
     "main.73a71b4c.css.map": "/static/css/main.73a71b4c.css.map",
-    "main.3f1326ce.js.map": "/static/js/main.3f1326ce.js.map"
+    "main.3cfae509.js.map": "/static/js/main.3cfae509.js.map"
   },
   "entrypoints": [
     "static/css/main.73a71b4c.css",
-    "static/js/main.3f1326ce.js"
+    "static/js/main.3cfae509.js"
   ]
 }
