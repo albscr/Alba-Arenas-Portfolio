@@ -7,10 +7,10 @@ function Title(props) {
     <>
       <motion.h1
         className="title"
-        initial={{ x: "700px" }}
+        initial={{ opacity: 0 }}
         animate={{
-          x: "10px",
-          transition: { duration: 1.2, ease: "easeInOut" },
+          opacity: 1,
+          transition: { duration: 1.2, ease: "easeInOut", delay: 1 },
         }}
       >
         {props.title}

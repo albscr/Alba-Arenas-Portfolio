@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Menu.css";
+import { motion } from "framer-motion";
 
 function Menu(props) {
   const [clicked, setClicked] = useState(false);
@@ -13,10 +14,14 @@ function Menu(props) {
 
   return (
     <div className="menu-container">
-      <div
+      <motion.div
         className={`icon nav-icon-1 ${clicked ? "open" : ""}`}
         onClick={handleClick}
-        
+        initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { duration: 1, ease: "easeIn"},
+          }}
       >
         <span></span>
         <span></span>
@@ -27,7 +32,7 @@ function Menu(props) {
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </motion.div>
 
       <ul
         className={`main-nav ${clicked ? "active" : ""}`}

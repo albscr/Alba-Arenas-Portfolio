@@ -5,16 +5,26 @@ import "../styles/HomePage.css";
 function HomePage() {
   return (
     <>
-      <div className="header"              >
-        <motion.div className="header-container"
-        initial={{ x: "700px" }}
-        animate={{ x: "10px", transition: { duration: 1.2, ease: "easeInOut" } }}
+      <div className="header">
+        <motion.div
+          className="header-container"
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { duration: 1.2, ease: "easeInOut", delay: 1 },
+          }}
         >
           <h1>Alba</h1>
           <h1>Arenas</h1>
-          <p className="typewriter-text">Frontend Developer</p>          
+          <p className="typewriter-text">Frontend Developer</p>
         </motion.div>
-        <span>01</span>
+        <motion.span
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: { duration: 1.2, ease: "easeInOut"},
+        }}
+        >01</motion.span>
       </div>
     </>
   );

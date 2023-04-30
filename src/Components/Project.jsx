@@ -21,7 +21,15 @@ function Project({ id, title, photo, description, links }) {
 
         <div className="project-container">
           <div className="left">
-            <img src={photo} alt={title} />
+            <motion.img
+              src={photo}
+              alt={title}
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity: 1,
+                transition: { duration: 1.2, ease: "easeInOut", delay: 2 },
+              }}
+            />
           </div>
 
           <div className="right">
