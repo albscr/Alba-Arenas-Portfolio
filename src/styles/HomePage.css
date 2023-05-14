@@ -34,15 +34,23 @@
   width: 190px;
   padding: 25px;
   overflow: hidden;
-  animation: typing 3s steps(20);
+  animation: typing 3.5s steps(20);
+  animation-delay: .8s;
   margin: 0;
   font-style: italic;
+  
 }
 
 @keyframes typing {
   from {
     width: 0;
+    
+    
   }
+  /* 100% {
+    width: 190px;
+    opacity: 1;
+  } */
 }
 
 @media only screen and (max-width: 767px) {

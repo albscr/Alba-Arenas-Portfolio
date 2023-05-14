@@ -20,12 +20,7 @@ function AboutMe() {
           transition={{ delay: 1 }}
         >
           <div className="img-container">
-            <Suspense
-              fallback={
-                <div className="loading"
-                >&nbsp;</div>
-              }
-            >
+            <Suspense fallback={<div className="loading">&nbsp;</div>}>
               <Profile />
             </Suspense>
             {/* <img src={Profile} alt="Alba Arenas" /> */}
@@ -76,43 +71,47 @@ function AboutMe() {
             </div>
           </div>
           <div className="description-container">
-            {/* <p>
-              Hello, and welcome to my portfolio!
-              <p /> */}
-            <p>
-              I'm <span className="fc"> Alba</span>, Frontend Developer with a
-              passion for <i>music, art, and design.</i> I have always been
-              drawn to the creative arts, and over the years I have explored
-              various mediums, from painting and drawing to playing musical
-              instruments.{" "}
-            </p>
-            <p>
-              <i>As a frontend developer,</i> I have found that programming
-              allows me to combine my passion for design and technology to
-              create beautiful and functional web experiences. I am particularly
-              interested in <u>user-centered</u> design and creating{" "}
-              <u>intuitive interfaces</u> that engage and delight users. In
-              addition to my work as a developer, I have also taught art
-              classes, which has given me valuable experience in working with
-              people and communicating complex ideas in a clear and concise
-              manner.{" "}
-            </p>{" "}
-            <p>
-              I find that this experience has also helped me to develop my
-              <b> skills</b> as a frontend developer, as it has taught me the
-              importance of user empathy and understanding the needs of others.{" "}
-              <i>In my free time,</i> you can often find me experimenting with
-              new design concepts or coding for fun to explore more about
-              transitions, effects, styles, etc. I find that these creative
-              pursuits fuel my development work, as they allow me to explore{" "}
-              <i>new ideas and push boundaries.</i>{" "}
-            </p>
-            <p>
-              <b>
-                Thank you for taking the time to get to know me a little better.
-                I look forward to hearing from you.
-              </b>
-            </p>
+            <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{
+                opacity: 1,
+                transition: { duration: 1.2, ease: "easeInOut", delay: 2 },
+            }}>
+              <p>
+                I'm <span className="fc"> Alba</span>, Frontend Developer with a
+                passion for <i>music, art, and design.</i> I have always been
+                drawn to the creative arts, and over the years I have explored
+                various mediums, from painting and drawing to playing musical
+                instruments.{" "}
+              </p>
+              <p>
+                <i>As a frontend developer,</i> I have found that programming
+                allows me to combine my passion for design and technology to
+                create beautiful and functional web experiences. I am
+                particularly interested in <u>user-centered</u> design and
+                creating <u>intuitive interfaces</u> that engage and delight
+                users. In addition to my work as a developer, I have also taught
+                art classes, which has given me valuable experience in working
+                with people and communicating complex ideas in a clear and
+                concise manner.{" "}
+              </p>{" "}
+              <p>
+                I find that this experience has also helped me to develop my
+                <b> skills</b> as a frontend developer, as it has taught me the
+                importance of user empathy and understanding the needs of
+                others. <i>In my free time,</i> you can often find me
+                experimenting with new design concepts or coding for fun to
+                explore more about transitions, effects, styles, etc. I find
+                that these creative pursuits fuel my development work, as they
+                allow me to explore <i>new ideas and push boundaries.</i>{" "}
+              </p>
+              <p>
+                <b>
+                  Thank you for taking the time to get to know me a little
+                  better. I look forward to hearing from you.
+                </b>
+              </p>
+            </motion.p>
           </div>
 
           <div className="aptitudes-container">

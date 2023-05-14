@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid black;
 }
 .title-project-container h2 {
   font-size: var(--fs-80);
@@ -20,10 +21,11 @@
   font-family: var(--font-family-3);
   text-align: center;
   padding: var(--sm);
-  border: 1px solid black;
+  
 }
 .title-project-container h2:first-child {
   width: 30%;
+  border-right: 1px solid black;
 }
 .title-project-container h2:last-child {
   width: 70%;

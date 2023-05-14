@@ -11,7 +11,7 @@ function HomePage() {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { duration: 1.2, ease: "easeInOut", delay: 1 },
+            transition: { duration: 1.2, ease: "easeInOut", delay: .5 },
           }}
         >
           <h1>Alba</h1>
