@@ -92,7 +92,7 @@ p .st {
     transition: transform 0.2s ease-in-out;
   }
 }
-
+/* 
 @media only screen and (min-width: 1500px) {
   .fc {
     font-size: 55px;
@@ -119,4 +119,4 @@ p .st {
     padding: 25px;
     margin: 30px 10px;
   }
-}
+} */

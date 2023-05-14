@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Project.css";
 import { motion } from "framer-motion";
 
-function Project({ id, title, photo, description, links }) {
+function Project({ id, title, photo, description, links, library, plus }) {
   return (
     <>
       <motion.div
@@ -20,7 +20,7 @@ function Project({ id, title, photo, description, links }) {
         </div>
 
         <div className="project-container">
-          <div className="left">
+          <div className="left"> 
             <motion.img
               src={photo}
               alt={title}
@@ -30,6 +30,11 @@ function Project({ id, title, photo, description, links }) {
                 transition: { duration: 1.2, ease: "easeInOut", delay: 2 },
               }}
             />
+            <p>
+              <span className="library">{library}</span>
+              {plus ? <span className="plus">{plus}</span> : null}
+            </p>
+            
           </div>
 
           <div className="right">

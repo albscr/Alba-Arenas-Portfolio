@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { Title } from "../Components/Title";
 import { motion } from "framer-motion";
-import Profile from "../assets/foto3.png";
 import "../styles/AboutMe.css";
+const Profile = lazy(() => import("../assets/Imagen"));
+// import Profile from "../assets/foto3.png";
 
 function AboutMe() {
   return (
@@ -11,12 +12,24 @@ function AboutMe() {
         <Title title="About Me" />
         <motion.section
           className="content-aboutMe"
-          initial={{ opacity: 0}}
-          animate={{ opacity: 100, transition: { duration: 1.2, ease: "easeInOut" } }}
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 100,
+            transition: { duration: 1.2, ease: "easeInOut" },
+          }}
           transition={{ delay: 1 }}
         >
           <div className="img-container">
-            <img src={Profile} alt="Alba Arenas" />
+            <Suspense
+              fallback={
+                <div className="loading"
+                >&nbsp;</div>
+              }
+            >
+              <Profile />
+            </Suspense>
+            {/* <img src={Profile} alt="Alba Arenas" /> */}
+
             <div className="rrss">
               {/* Instagram */}
               <a

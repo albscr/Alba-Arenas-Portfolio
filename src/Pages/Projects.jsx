@@ -15,7 +15,11 @@ function Projects() {
          title={project.title}
          photo={project.photo}
          description={project.description}
-         links={project.links}/> 
+         links={project.links}
+         library={project.library}
+         plus={project.plus}
+         /> 
+         
         );
       })}
     </div>
