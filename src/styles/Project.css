@@ -82,7 +82,7 @@
   margin: 0 auto;  
 }
 
-.left p {
+.project-container .left p {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,7 +94,7 @@
   z-index: 1;  
   height: 100%;
 }
-.left p:hover {
+.project-container .left p:hover {
   opacity: 1;
 }
 
