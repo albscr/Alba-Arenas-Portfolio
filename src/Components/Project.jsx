@@ -15,7 +15,7 @@ function Project({ id, title, photo, description, links, library, plus }) {
         transition={{ delay: 1 }}
       >
         <div className="title-project-container">
-          <motion.h2
+          <motion.span
             initial={{ opacity: 0 }}
             animate={{
               opacity: 1,
@@ -23,7 +23,7 @@ function Project({ id, title, photo, description, links, library, plus }) {
             }}
           >
             {id}
-          </motion.h2>
+          </motion.span>
           <motion.h2
             initial={{ opacity: 0 }}
             animate={{
@@ -69,7 +69,7 @@ function Project({ id, title, photo, description, links, library, plus }) {
                 href={links.find((link) => link.live)?.live}
               >
                 <motion.svg
-                  className="svg-sm"
+                  className="svg-m"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                   initial={{ opacity: 0 }}
@@ -91,7 +91,7 @@ function Project({ id, title, photo, description, links, library, plus }) {
                 href={links.find((link) => link.repository)?.repository}
               >
                 <motion.svg
-                  className="svg-sm close"
+                  className="svg-m close"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 496 512"
                   initial={{ opacity: 0 }}

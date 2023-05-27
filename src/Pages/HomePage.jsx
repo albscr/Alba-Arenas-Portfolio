@@ -6,25 +6,28 @@ function HomePage() {
   return (
     <>
       <div className="header">
-        <motion.div
-          className="header-container"
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            transition: { duration: 1.2, ease: "easeInOut", delay: .5 },
-          }}
-        >
-          <h1>Alba</h1>
-          <h1>Arenas</h1>
-          <p className="typewriter-text">Frontend Developer</p>
-        </motion.div>
-        <motion.span
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: 1,
-          transition: { duration: 1.2, ease: "easeInOut"},
-        }}
-        >01</motion.span>
+        <div className="header-container">
+          <motion.h1
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: 1,
+              transition: { duration: 1, ease: "easeIn", delay: 0.1 },
+            }}
+          >
+            Alba Arenas
+          </motion.h1>
+
+          <motion.p
+            className="position"
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: 1,
+              transition: { duration: 1, ease: "easeIn", delay: 0.5 },
+            }}
+          >
+            Frontend Developer
+          </motion.p>
+        </div>
       </div>
     </>
   );

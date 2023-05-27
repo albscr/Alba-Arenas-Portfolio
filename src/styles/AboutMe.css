@@ -10,9 +10,6 @@
   color: rgb(44, 44, 44);
   margin-top: var(--md);
 }
-.content-aboutMe div {
-  padding: 20px 50px;
-}
 .content-aboutMe h2 {
   font-size: 35px;
   font-weight: 300;
@@ -23,16 +20,18 @@
 }
 /* 1 */
 .img-container {
-  grid-area: 1 / 1 / 4 / 4;
+  grid-area: 1 / 1 / 5 / 4;
   border: 1px solid black;
-  
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .img-container img {
-   
   display: block;
   max-width: 100%;
-  height: 700px;
+  height: 800px;
   object-fit: cover;
   border-radius: 8px;
   margin: 0 auto;
@@ -40,14 +39,17 @@
 .rrss {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  width: 400px;
+  margin-top: 40px;
 }
 /* 2 */
 .description-container {
-  grid-area: 1 / 4 / 5 / 6;
+  grid-area: 1 / 4 / 2 / 6;
   border: 1px solid black;
   letter-spacing: 1.2px;
   text-align: justify;
+  padding: 0 20px;
 }
 .description-container p {
   font-size: 20px;
@@ -59,25 +61,26 @@
 
 /* 3 */
 .aptitudes-container {
-  grid-area: 4 / 1 / 7 / 3;
+  grid-area:  3 / 4 / 5 / 6; 
   border: 1px solid black;
   text-align: center;
 }
 
 /* 4 */
 .resume-container {
-  grid-area: 4 / 3 / 5 / 4;
+  grid-area:  2 / 4 / 3 / 6; 
   border: 1px solid black;
+  padding: 0 20px;
 }
 .resume-container a {
   font-family: var(--font-family-2);
-  color: black;
+  color: rgb(106, 106, 106);
   text-decoration: none;
+  font-size: 20px;
 }
 .resume-container a:hover {
-  font-size: 18px;
-  font-weight: bold;
-  transition: all ease-in-out 0.1s;
+  color: black;
+  transition: all ease-in 0.1s;
 }
 .resume-container a::after {
   content: "→";
@@ -85,41 +88,28 @@
 }
 /* 5 */
 .experience-container {
-  grid-area: 5 / 3 / 7 / 6;
+  grid-area: 5 / 1 / 7 / 6;
   border: 1px solid black;
+  padding: 0 50px;
+  padding-bottom: 40px;
 }
 .experience-container ul li {
   list-style: none;
   font-family: var(--font-family-2);
-  font-size: 16px;
+  font-size: 18px;
   padding-top: 20px;
-}
-.loading {
-  background: rgb(242, 242, 242);
-  
-  max-width: 100%;
-  height: 700px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin: 0 auto;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.6) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  animation: box-loading 1.5s ease-in-out infinite;
+  line-height: 40px;
 }
 
-@keyframes box-loading { 
+@keyframes box-loading {
   0% {
-    width: 0;    
+    width: 0;
   }
   50% {
-    width: 100%;    
+    width: 100%;
   }
   100% {
-    width: 0;    
+    width: 0;
   }
 }
 
@@ -132,36 +122,44 @@
   }
 }
 
-@media only screen and (max-width: 1064px) {
+@media only screen and (max-width: 1024px) {
   .content-aboutMe {
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 20px;
   }
-  .content-aboutMe div {
-    padding: 15px 25px;
-  }
+
   .resume-container,
   .img-container,
   .experience-container {
     width: 100%;
+    padding: 10px;
+    padding-bottom: 30px;
+  }
+  .rrss {
+    width: 200px;
+  }
+  .aptitudes-container {
+    padding-bottom: 30px;
   }
   .experience-container ul {
-    padding: 0;
+    padding: 2px;
+    text-align: justify;
+    
   }
   .img-container img {
     height: 500px;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+/* @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .content-aboutMe {
     margin: 20px 60px;
   }
   .content-aboutMe div {
     padding: 20px 30px;
   }
-}
+} */
 
 /* @media only screen and (min-width: 1500px) {
   .content-aboutMe {

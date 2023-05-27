@@ -49,8 +49,8 @@ p .st {
   transform: scale(1.2);
 }
 .svg-m {
-  width: 55px;
-  height: 55px;
+  width: 80px;
+  height: 80px;
   border: 1px solid black;
   border-radius: 8px;
   padding: 15px;
@@ -62,8 +62,8 @@ p .st {
   transform: scale(1.1);
 }
 .svg-l {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   border: 1px solid black;
   border-radius: 8px;
   padding: 15px;
@@ -77,10 +77,9 @@ p .st {
 
 @media only screen and (max-width: 767px) {
   .svg-m {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
-    margin: 2px;
+    width: 60px;
+    height: 60px;
+    padding: 5px;    
   }
   .svg-l {
     width: 90px;

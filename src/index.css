@@ -1,14 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background: radial-gradient(
+      ellipse at center,
+      hsla(19, 86%, 71%, 1) 0%,
+      rgba(0, 0, 0, 0) 70%
+    ),
+    radial-gradient(
+      ellipse at center,
+      hsla(267, 87%, 67%, 1) 0%,
+      rgba(0, 0, 0, 0) 70%
+    ),
+    radial-gradient(
+      ellipse at center,
+      hsla(216, 62%, 74%, 1) 0%,
+      rgba(0, 0, 0, 0) 70%
+    ),
+    radial-gradient(
+      ellipse at center,
+      hsla(339, 73%, 76%, 1) 0%,
+      rgba(0, 0, 0, 0) 70%
+    );
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 900px 900px, 900px 900px, 900px 900px;
+  background-attachment: fixed;
+  animation: bganimation 30s infinite;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
 body,
 h1,
 h2 {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 @keyframes bganimation {
@@ -22,24 +53,6 @@ code {
     background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
   }
 }
-
-html {
-  background: radial-gradient(
-      ellipse at center,
-      #7d11284d 0%,
-      rgba(0, 0, 0, 0) 70%
-    ),
-    /* niebieski */
-      radial-gradient(ellipse at center, #7f55394d 0%, rgba(0, 0, 0, 0) 70%),
-    /*czerwony */
-      radial-gradient(ellipse at center, #c41e3d4d 0%, rgba(0, 0, 0, 0) 70%)
-      /*zielony */ #fff;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: 900px 900px, 900px 900px, 900px 900px;
-  background-attachment: fixed;
-  animation: bganimation 30s infinite;
-}
-
 @media screen and (max-width: 768px) {
   html {
     background-size: 500px 500px, 500px 500px, 500px 500px;
