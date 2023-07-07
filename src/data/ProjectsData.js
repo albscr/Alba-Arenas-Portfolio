@@ -26,16 +26,29 @@ const projectsData = [
         plus: "Tailwind"
 
     },
+    // {
+    //     id: 3,
+    //     title: "Parallax Effect",
+    //     photo: "https://user-images.githubusercontent.com/108294869/238160891-ee166b00-4d79-4d7b-bb5e-f5a0054c7817.png",
+    //     description: "I have experience utilizing CSS properties such as translate3d(), calc(), background-position, will-change for element manipulation, scroll-behavior, overflow for smooth browsing, text-shadow for visual appeal, and window.addEventListener() for scroll event detection and CSS variable updates.",
+    //     links: [
+    //         { live: "https://prueba-parallax.vercel.app/" },
+    //         { repository: "https://github.com/albscr/Parallax-effect" }
+    //     ],
+    //     library: "JavaScript",
+
+    // },
     {
         id: 3,
-        title: "Parallax Effect",
-        photo: "https://user-images.githubusercontent.com/108294869/238160891-ee166b00-4d79-4d7b-bb5e-f5a0054c7817.png",
-        description: "I have experience utilizing CSS properties such as translate3d(), calc(), background-position, will-change for element manipulation, scroll-behavior, overflow for smooth browsing, text-shadow for visual appeal, and window.addEventListener() for scroll event detection and CSS variable updates.",
+        title: "Game Tracker",
+        photo: "https://user-images.githubusercontent.com/108294869/246874807-0ba1a1e1-c1ac-44ce-9e13-bf3faae78f1e.png",
+        description: "Developed a game app with a local storage-powered leaderboard for match logging, statistics display, and an intuitive user interface.",
         links: [
-            { live: "https://prueba-parallax.vercel.app/" },
-            { repository: "https://github.com/albscr/Parallax-effect" }
+            { live: "https://ping-pong-tracker.vercel.app/" },
+            { repository: "https://github.com/albscr/Ping-Pong/tree/main" }
         ],
-        library: "JavaScript",
+        library: "TypeScript",
+        plus: "Tailwind"
 
     },
 
